@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.corpo {
+    min-width: 50%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 2%;
+    border: 4px solid #acff3f;
+    border-radius: 16px;
+    background-color: #131313;
+}
+
+.corpo p{
+    padding-bottom: 20px;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(172, 255, 63);
+    background-color: rgb(32, 32, 32);
+    color: rgb(172, 255, 63);
+    font-size: 16pt;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+#counter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#currentNum {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 16pt;
+}

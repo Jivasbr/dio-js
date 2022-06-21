@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.corpo {
+    min-width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 2%;
+    border: 4px solid #acff3f;
+    border-radius: 16px;
+    background-color: #131313;
+}
+
+.corpo h2{
+    display: flex;
+    align-self: center;
+}
+
+.corpo p{
+    display: flex;
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+/* Estilo da DIV de Input */
+.input {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content:space-evenly;
+    width: 90%;
+}
+
+/* Estilo do campo "Input" */
+.todoField {
+    width: 80%;
+    height: 29px;
+    text-align: center;
+    align-self: center;
+    border-radius: 8px;
+    border: 2px solid rgb(172, 255, 63);
+    background-color: rgb(32, 32, 32);
+    color: rgb(172, 255, 63);
+    font-size: 12pt;
+    margin-right: 10px;
+}
+
+/* Estilo do botão "Incluir" */
+.AddButton {
+    align-self: center;
+    padding: 3px 20px 3px 20px;
+    border-radius: 8px;
+    border: 2px solid rgb(172, 255, 63);
+    background-color: rgb(32, 32, 32);
+    color: rgb(172, 255, 63);
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.AddButton:hover {
+    border: 2px solid rgb(172, 255, 63);
+    background-color: rgb(172, 255, 63);
+    color: rgb(32, 32, 32);
+}
+
+/* Margin e padding da lista */
+ul {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+    /* Estilização da lista de items */
+    ul li {
+    cursor:pointer;
+    position: relative;
+    margin: 4px 0 4px 0;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 14px;
+    transition: all 0.5s;
+    border-radius: 8px;
+  
+    /* Tira a seleção dos itens da lista*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+    ul li::before {
+    content: '';
+    position: absolute;
+    border-color: #acff3f;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    top: 10px;
+    left: 10px;
+    height: 18px;
+    width: 18px;    
+    }
+  
+    /* Muda cor do fundo da lista ao passar o mouse */
+    ul li:hover {
+    background: rgb(32, 32, 32);
+    }
+  
+    /* Quando selecionado, adiciona um background color e risca o texto */
+    ul li.checked {
+    background: #acff3f;
+    color: #202020;
+    text-decoration: line-through;
+    }
+
+    /* Adiciona um icone de Check quando selecionado */
+    ul li.checked::before {
+    content: '✔';
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    background-color: #131313;
+    color: #acff3f;
+    border-color: #202020;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    top: 10px;
+    left: 10px;
+    height: 18px;
+    width: 18px;   
+    }
+  
+    /* Estilo do botão close "X" */
+    .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    }
+  
+    .close:hover {
+    background-color: #acff3f;
+    color: #202020;
+    border-radius: 0px 8px 8px 0;
+    }
