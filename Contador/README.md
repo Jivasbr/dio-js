@@ -1,4 +1,4 @@
-# Contador :keycap_ten:
+# [Contador](https://jivasbr.github.io/dio-js/Contador/index.html) :keycap_ten:
 
 ### Link do repositório original:
 
